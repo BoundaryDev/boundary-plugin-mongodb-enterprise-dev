@@ -2,7 +2,7 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 import logging
 import time
 import sys
-from pysnmp_local.entity.rfc3413.oneliner import cmdgen
+from pysnmp.entity.rfc3413.oneliner import cmdgen
 
 import boundary_plugin
 import boundary_accumulator
