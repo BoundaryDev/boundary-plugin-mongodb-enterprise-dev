@@ -1,0 +1,66 @@
+{
+    "description": "Monitors MongoDB",
+    "command": "python -u plugin.py",
+    "icon" : "icon.png",
+    "metrics" : [
+        "MONGODB_GLOBAL_OP_INSERT",
+        "MONGODB_GLOBAL_OP_QUERY",
+        "MONGODB_GLOBAL_OP_UPDATE",
+        "MONGODB_GLOBAL_OP_DELETE",
+        "MONGODB_GLOBAL_OP_GETMORE",
+        "MONGODB_GLOBAL_OP_COMMAND",
+        "MONGODB_REPL_OP_INSERT",
+        "MONGODB_REPL_OP_QUERY",
+        "MONGODB_REPL_OP_UPDATE",
+        "MONGODB_REPL_OP_DELETE",
+        "MONGODB_REPL_OP_GETMORE",
+        "MONGODB_REPL_OP_COMMAND",
+        "MONGODB_MEMORY_RESIDENT",
+        "MONGODB_MEMORY_VIRTUAL",
+        "MONGODB_CONNECTIONS_CURRENT",
+        "MONGODB_CURSOR_TOTAL_OPEN",
+        "MONGODB_CURSOR_CLIENT_SIZE",
+        "MONGODB_INDEX_ACCESSES",
+        "MONGODB_INDEX_HITS",
+        "MONGODB_INDEX_MISSES",
+        "MONGODB_NETWORK_IN",
+        "MONGODB_NETWORK_OUT",
+        "MONGODB_NETWORK_REQUESTS",
+        "MONGODB_METRICS_DOCUMENT_DELETED",
+        "MONGODB_METRICS_DOCUMENT_INSERTED",
+        "MONGODB_METRICS_DOCUMENT_RETURNED",
+        "MONGODB_METRICS_DOCUMENT_UPDATED"],
+
+    "dashboards" : [{"name" : "MongoDB Dummy",
+        "layout" : 
+"d-w=4&d-h=4&d-pad=5&d-bg=none&d-g-VARNISH_CACHE_BACKEND_BUSY=0-0-1-1&d-g-VARNISH_CACHE_BACKEND_CONN=1-0-1-1&d-g-VARNISH_CACHE_BACKEND_FAIL=2-0-1-1&d-g-VARNISH_CACHE_BACKEND_RECYCLE=3-0-1-1&d-g-VARNISH_CACHE_BACKEND_REQ=0-1-1-1&d-g-VARNISH_CACHE_BACKEND_RETRY=1-1-1-1&d-g-VARNISH_CACHE_BACKEND_REUSE=2-1-1-1&d-g-VARNISH_CACHE_BACKEND_TOOLATE=3-1-1-1&d-g-VARNISH_CACHE_BACKEND_UNHEALTHY=0-2-1-1&d-g-VARNISH_CACHE_S_BODYBYTES=0-3-1-1&d-g-VARNISH_CACHE_CACHE_HIT=1-2-1-2-t&d-g-VARNISH_CACHE_CACHE_MISS=1-2-1-2-b&d-g-VARNISH_CACHE_CLIENT_CONN=2-2-1-1&d-g-VARNISH_CACHE_S_HDRBYTES=2-3-1-1&d-g-VARNISH_CACHE_S_REQ=3-2-1-1&d-g-VARNISH_CACHE_S_SESS=3-3-1-1" }],
+
+    "paramArray": { "itemTitle": [ "hostname" ], "schemaTitle": "Agent" },
+    "paramSchema": [
+        {
+            "title": "SNMP Hostname",
+            "name": "hostname",
+            "description": "Host to query using SNMP",
+            "type": "string",
+            "default": "localhost",
+            "required": true
+        },
+        {
+            "title": "SNMP Port",
+            "name": "port",
+            "description": "UDP port to use to query SNMP",
+            "type": "integer",
+            "default": 161,
+            "required": true
+        },
+        {
+            "title": "SNMP Community",
+            "name": "community",
+            "description": "SNMP community name to use when querying",
+            "type": "string",
+            "default": "mongodb",
+            "required": true
+        }
+    ]
+}
+
