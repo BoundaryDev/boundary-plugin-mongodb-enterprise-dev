@@ -1,5 +1,5 @@
 {
-    "description": "Monitors MongoDB",
+    "description": "Monitors MongoDB Enterprise",
     "command": "python -u plugin.py",
     "icon" : "icon.png",
     "metrics" : [

@@ -1,7 +1,7 @@
-Boundary MongoDB Plugin
-=======================
+Boundary MongoDB Enterprise Plugin
+==================================
 
-The Boundary MongoDB plugin collects information on MongoDB.
+The Boundary MongoDB Enterprise plugin collects information on MongoDB.
 **Only [MongoDB Enterprise](http://www.mongodb.com/products/mongodb-enterprise) is supported.**
 
 The plugin requires MongoDB to have SNMP monitoring enabled, and an SNMP agent listening on a UDP socket accessible
